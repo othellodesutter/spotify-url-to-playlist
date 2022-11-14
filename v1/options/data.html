@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Data</title>
+</head>
+
+<body>
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <br>
+        <img src="../icons/icon128.png">    
+        <h1>Spotify URL to Playlist</h1>
+        <p class="lead" id="welcome"></p>
+        
+        <div id="playlist_id_div">
+            <label for="playlist_id">Current playlist ID:</label>
+            <input type="text" id="playlist_id" name="playlist_id">
+            <button class="btn btn-success" id='save_playlist_id'>Save</button>
+            </div>
+        <div id="result"></div>
+        <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th class="text-center" style="width: 70%">Playlist Name</th>
+                    <th class="text-center" style="width: 20%">Playlist ID</th>
+                    <th class="text-center" style="width: 10%"></th>
+                </tr>
+            </thead>
+            <tbody id="playlists">
+            </tbody>
+        </table>
+        <button class="btn btn-danger" id="logout">Logout</button>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./logout.js"></script>
+</body>
+</html>
